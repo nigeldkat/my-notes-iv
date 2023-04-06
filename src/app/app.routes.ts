@@ -22,8 +22,8 @@ export const routes: Routes = [
       import('./notelist/notelist.page').then((m) => m.NoteListPage),
   },
   {
-    path: 'note',
+    path: 'note/:id',
     loadComponent: () =>
-      import('./notes/note.page').then((m) => m.NotePage),
+      import('./notelist/note.page').then((m) => m.NotePage),
   },
 ];
