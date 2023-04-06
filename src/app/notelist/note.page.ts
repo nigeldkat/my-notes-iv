@@ -11,11 +11,11 @@ import * as internal from 'stream';
   imports: [IonicModule],
 })
 export class NotePage implements OnInit {
-  public id: string = "7";
+  public id: string = "";
   private activatedRoute = inject(ActivatedRoute);
   constructor() {}
 
   ngOnInit() {
-    //this.id = this.activatedRoute.snapshot.paramMap.get('id') as string;
+    this.id = this.activatedRoute.snapshot.paramMap.get('id') as string;
   }
 }
